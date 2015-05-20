@@ -1,0 +1,597 @@
+<!DOCTYPE html><html><head><title>Mapbox and the Geoweb</title><meta charset='utf-8'><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link href='big.css' rel='stylesheet' type='text/css' />
+<script src='big.js'></script>
+<style>
+.pirate {
+  background-image: url(./images/montreal-pirate.png);
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  background-size: 100%;
+}
+.mapbox-maps {
+  background-image: url(./images/mapbox-maps.png);
+  background-repeat: no-repeat;
+  background-position: center 35px;
+  background-size: 100%;
+}
+.mapbox1 {
+  background-image: url(./images/mapbox1.png);
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-size: 100%;
+}
+.map {
+  background-image: url(http://i.giphy.com/142na7ROkljwKA.gif);
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  background-size: 80%;
+}
+.oakland-comic {
+  background-image: url(./images/oakland-comic.png);
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-size: 100%;
+}
+.cactus {
+  background-image: url(http://i.imgur.com/XeIkh2g.jpg);
+  background-repeat: no-repeat;
+  background-position: center 40px;
+  background-size: 70%;
+}
+.open {
+  background-image: url(./images/open.png);
+  background-repeat: no-repeat;
+  background-position: center 150px;
+  background-size: 90%;
+}
+.github {
+  background-image: url(./images/github.png);
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-size: 100%;
+}
+.clock {
+  background-image: url(http://i.giphy.com/KcvtgLaIQcVnG.gif);
+  background-repeat: repeat;
+  background-size: 20%;
+}
+.applause {
+  background-image: url(http://i.giphy.com/Ucvfi6Vnig6Ri.gif);
+  background-repeat: repeat;
+  background-size: 20%;
+}
+.diy {
+  background-image: url(http://i.giphy.com/9gtRT7bSaYous.gif);
+  background-repeat: repeat;
+  background-size: 20%;
+}
+.swirl {
+  background-image: url(http://i.giphy.com/2twF2SEXj4oZG.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.bart-train {
+  background-image: url(http://sf.streetsblog.org/wp-content/uploads/2009/06_04/BART%20photos_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-size: 65%;
+}
+.clipper {
+  background-image: url(http://learnwageworks.com/commutercard/images/clipper_card_front_lr.jpg);
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-size: 30%;
+}
+.bart-fares {
+  background-image: url(http://studio-tm.com/metrostations/wp-content/uploads/2012/03/BART-STATION-ROCKRIDGE-STATION-METRO-SUBWAY-INSIDE-TICKET-FARE-LIST-FOR-ALL-STATIONS-FROM-ROCKRIDGE.jpg);
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-size: 75%;
+}
+.back-pat {
+  background-image: url(http://i.giphy.com/9Q249Qsl5cfLi.gif);
+  background-repeat: no-repeat;
+  background-position: center 5px;
+}
+.raise-hands {
+  background-image: url(http://i.giphy.com/zmhkXPDOjVsha.gif);
+  background-repeat: no-repeat;
+  background-position: center 5px;
+}
+.puppy {
+  background-image: url(http://i.giphy.com/LPQ943m8yMcpy.gif);
+  background-repeat: no-repeat;
+  background-position: center 5px;
+}
+.mapbox-website {
+  background-image: url(./images/mapbox-website.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.mapbox-github-public {
+  background-image: url(./images/mapbox-github-public.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center 5px;
+}
+.mapbox-github-public2 {
+  background-image: url(./images/mapbox-github-public2.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center 5px;
+}
+.mapbox-roadtrippers {
+  background-image: url(./images/mapbox-roadtrippers.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.mapbox-pencil {
+  background-image: url(./images/mapbox-pencil.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.mapbox-wheatpaste {
+  background-image: url(./images/mapbox-wheatpaste.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.mapbox-satellite {
+  background-image: url(./images/mapbox-satellite.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.mapbox-developers {
+  background-image: url(./images/mapbox-developers.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.mapboxjs {
+  background-image: url(./images/mapboxjs.png);
+  background-position: center 15px;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.mapbox-gl {
+  background-image: url(./images/mapbox-gl.png);
+  background-position: center 15px;
+  background-repeat: no-repeat;
+}
+.js-example {
+  background-image: url(./images/js-example.png);
+  background-position: center 15px;
+  background-size: 45%;
+  background-repeat: no-repeat;
+}
+.turf {
+  background-image: url(./images/turf.png);
+  background-position: center 15px;
+  background-repeat: no-repeat;
+}
+.mapbox-studio {
+  background-image: url(./images/studio.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.mapbox-editor {
+  background-image: url(./images/mapbox-editor.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.mapbox-projects {
+  background-image: url(./images/mapbox-projects.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.guides1 {
+  background-image: url(./images/guides1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.guides2 {
+  background-image: url(./images/guides2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.gov-example {
+  background-image: url(./images/gov-example.gif);
+  background-size: 75%;
+  background-position: center 5px;
+  background-repeat: no-repeat;
+}
+.lexington-maps {
+  background-image: url(./images/lexington-maps.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.lex-neighborhoods {
+  background-image: url(./images/lex-neighborhoods.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.style-editor {
+  background-image: url(./images/style-editor.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center 5px;
+}
+.style-new-project {
+  background-image: url(./images/style-new-project.png);
+  background-size: 100%;
+  background-position: center 55px;
+  background-repeat: no-repeat;
+}
+.inspecting {
+  background-image: url(./images/inspecting.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+  .texteditor {
+    background-image: url(./images/texteditor.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+  }
+  .demo {
+    background-image: url(./images/demo.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+  }
+  .slippy-map {
+    background-image: url(./images/slippy-map.gif);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .mapquest {
+    background-image: url(./images/2-Ridgefield-CT-Mapquest-out.jpg);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .old-google {
+    background-image: url(./images/3-old-google-maps-1.JPG);
+    background-repeat: no-repeat;
+    background-position: center 30px;
+  }
+  .tile-loading {
+    background-image: url(./images/tiles-loading.gif);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .zoom0 {
+    background-image: url(./images/zoom0.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-color: white;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .zoom1 {
+    background-image: url(./images/zoom1.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-color: white;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .zoom2345 {
+    background-image: url(./images/zoom2-3-4-5.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-color: white;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .zoom13 {
+    background-image: url(./images/zoom13.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-color: white;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .tile-gif {
+    background-image: url(./images/tiles.gif);
+    background-repeat: no-repeat;
+    background-position: center 150px;
+    background-size: 30%;
+  }
+  .mercator {
+    background-image: url(./images/mercator.jpg);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-size: 100%;
+  }
+  .mercator1 {
+    background-image: url(./images/mercator.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .distortion {
+    background-image: url(./images/distortion.gif);
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .vector-tiles {
+    background-image: url(./images/vector_tiles.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .anatomy {
+    background-image: url(./images/anatomy-of-a-web-map.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 3px 3px 5px #222;
+    background-color: white;
+    background-size: 80%;
+  }
+  .quote {
+    font-family: serif;
+    letter-spacing: 2px;
+  }
+  .tiled-tiles {
+    background-image: url(http://maptime-ams.github.io/web-maps-101/images/various_tiles.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .leaflet-gj {
+    background-image: url(./images/leaflet-gj.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #222;
+
+  }
+  .geojson {
+    background-image: url(./images/geojson.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+  }
+  .featurecollection {
+    background-image: url(./images/featurecollection.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+  }
+  .earthquakedata {
+    background-image: url(./images/earthquakedata.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+  }
+  .earthquakegj {
+    background-image: url(./images/earthquakegj.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+  }
+  .earthquakesgist {
+    background-image: url(./images/earthquakesgist.png);
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    background-size: 100%;
+  }
+  .gistmap {
+    background-image: url(./images/gistmap.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+  }
+  .earthquakeprops {
+    background-image: url(./images/earthquakeprops.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+  }
+  .mapboxdata {
+    background-image: url(./images/mapboxdata.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .mapboxquakes {
+    background-image: url(./images/mapboxquakes.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .geojsonio1 {
+    background-image: url(./images/geojsonio1.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .drawmarker {
+    background-image: url(./images/drawmarker.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .gj-save {
+    background-image: url(./images/gj-save.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+    background-size: 100%;
+    text-shadow: 3px 3px 5px #222;
+  }
+  .map2 {
+    background-image: url(./images/map2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+</style>
+
+</head><body>
+
+<div><em>Mapbox</em>! A presentation for <strong>GEOG 491/591</strong>, Spring 2015</div>
+<div><em>Hi!</em> My name is <a href='https://twitter.com/lyzidiamond'>Lyzi Diamond</a>. I do <a href='https://mapbox.com/help'>support</a> and <a href='https://mapbox.com/education'>education</a> at <a href='https://mapbox.com'>Mapbox</a>.</div>
+<div>At Mapbox, I <em>answer questions</em> and help our users <strong>understand</strong> our tools through <a href='https://mapbox.com/developers'>documentation</a>, <a href='https://mapbox.com/guides'>guides</a>, and <a href='https://mapbox.com/blog'>blog posts</a>.</div>
+<div>Who here has heard of <strong>Mapbox</strong> before?</div>
+<div data-bodyclass='mapbox-maps'>Awesome!</div>
+<div>At <strong>Mapbox</strong>, we make <em>developer tools</em> for making <strong>custom web maps</strong>.</div>
+<div><em>"Custom"</em> means more than just <strong>custom data</strong> on a map.</div>
+<div>It means <em>custom</em> as in <strong>style...</strong></div>
+<div data-bodyclass='mapbox-roadtrippers'></div>
+<div data-bodyclass='mapbox-wheatpaste'></div>
+<div data-bodyclass='mapbox-pencil'></div>
+<div data-bodyclass='mapbox-satellite'></div>
+<div>... and <em>custom</em> as in <strong>interaction</strong>.</div>
+<div data-bodyclass='mapboxjs'></div>
+<div data-bodyclass='mapbox-gl'></div>
+<div data-bodyclass='turf'></div>
+<div data-bodyclass='mapbox-developers'></div>
+<div data-bodyclass='map'></div>
+<div>There are <strong>many</strong> tools out there for <em>making maps</em>. With <strong>some</strong> of them, it's <em>very clear</em> what all they can do.</div>
+<div><strong>Mapbox</strong> is <em>not</em> that company. We do a <strong>ton</strong> of things!</div>
+<div data-bodyclass='mapbox-website'></div>
+<div data-bodyclass='mapbox-github-public'></div>
+<div data-bodyclass='mapbox-github-public2'></div>
+<div>We have a few <strong>main tools</strong> you can use to make <em>smart</em>, <em>beautiful</em> maps. Let's <strong>talk about them</strong>.</div>
+<div><em>Currently</em>, our <strong>main design tool</strong> is <a href='https://mapbox.com/mapbox-studio'>Mapbox Studio</a>.</div>
+<div data-bodyclass='mapbox-studio'></div>
+<div><em>Studio</em> comes <strong>pre-loaded</strong> with a <em>ton</em> of vector data from <strong>OpenStreetMap</strong> and <strong>Natural Earth</strong>.</div>
+<div><a href='http://osm.org'>OpenStreetMap</a> is an <em>open</em> and <em>editable</em> map of the world. (Think of it as the <strong>Wikipedia of maps</strong>.)</div>
+<div><a href='https://naturalearthdata.com'>Natural Earth</a> is a dataset co-created by <em>Nathaniel Kelso</em> from Apple and <em>Tom Patterson</em> from the National Park Service.</div>
+<div>You can <em>style</em> this data using a language called <strong>CartoCSS</strong> (which is <em>very</em> similar to CSS).</div>
+<div data-bodyclass='style-editor'></div>
+<div>You can also add your own <strong>vector data</strong> to style.</div>
+<div>Then, you can <em>upload</em> your styles and sources to your <strong>Mapbox account</strong> to use in your maps.</div>
+<div data-bodyclass='style-new-project'></div>
+<div>Once on the <em>Mapbox servers</em>, your data becomes <strong>vector tiles</strong>. This is <em>awesome</em> and <strong>innovative</strong> and <em>fast</em>!</div>
+<div>With <strong>vector tiles</strong>, your <em>vector data</em> and <strong>style</strong> are stored separately, and the <em>vector data</em> maintains its <strong>attributes</strong>.</div>
+<div data-bodyclass='inspecting'></div>
+<div>That way you can apply <em>multiple styles</em> to the <strong>same</strong> data, and the <em>files</em> are <strong>smaller</strong>. This means your <em>maps</em> load quicker!</div>
+<div>But I <strong>digress</strong>. Here's a <em>puppy</em>.</div>
+<div data-bodyclass='puppy'></div>
+<div>So <strong>let's say</strong> you make a <em>custom map style</em> with <strong>Mapbox Studio</strong>. Then what?</div>
+<div>You could <em>add</em> it to a map in the <a href='https://mapbox.com/editor'>Mapbox Editor</a>!</div>
+<div data-bodyclass='mapbox-editor'></div>
+<div>With <strong>Mapbox Editor</strong> you can also <em>upload data</em> to add to your map, or <strong>draw</strong> your own data.</div>
+<div>These <em>Projects</em> are then <strong>saved</strong> to your account and given a <em>map ID</em>.</div>
+<div data-bodyclass='mapbox-projects'></div>
+<div>(Editor <strong>also</strong> gives you a <em>share link</em> and an <em>embed code</em>.)</div>
+<div>But let's say you want <strong>more</strong>. Let's say you want <em>custom tooltips</em> or <strong>custom markers</strong> or a <em>list of features</em>.</div>
+<div><strong>Awesome!</strong> You can use <a href='https://mapbox.com/mapbox.js'>Mapbox.js</a>.</div>
+<div data-bodyclass='js-example'></div>
+<div>There are a <em>ton</em> of different examples both in the <a href='https://mapbox.com/mapbox.js'>documentation</a> and on the <a href='https://mapbox.com/blog'>blog</a>.</div>
+<div><strong>Oh!</strong> and we have these handy dandy <a href='https://mapbox.com/guides'>guides</a>!</div>
+<div data-bodyclass='guides1'></div>
+<div data-bodyclass='guides2'></div>
+<div>Okay. So you made a <em>custom style</em> with <strong>Mapbox Studio</strong>. You <em>added some data</em> with <strong>Mapbox Editor</strong>. You <em>added more interaction</em> with <strong>Mapbox.js</strong>.</div>
+<div>What about <em>analysis</em>? Or ooh, what if we add some <strong>directions</strong> to our map? Maybe <em>geocoding</em>?</div>
+<div>Check, check, check.</div>
+<div><a href='http://turfjs.org'>Turf.js</a> is a JavaScript library for <strong>spatial analysis</strong>.</div>
+<div data-bodyclass='gov-example'></div>
+<div>We also have a lovely <a href='https://www.mapbox.com/developers/api/directions/'>directions API</a> and a <a href='https://www.mapbox.com/developers/api/geocoding/'>geocoder</a>, both in <em>active development</em>.</div>
+<div>(We also have a <a href='https://www.mapbox.com/developers/api/static/'>static maps API</a> if you're <strong>into</strong> that kind of thing.)</div>
+<div>We also have a <em>ton</em> of <a href='https://mapbox.com/developers'>mobile tools</a>!</div>
+<div>But <strong>before</strong> we can really <em>play</em> with these tools, we should <strong>understand</strong> some of the <em>fundamentals</em>.</div>
+<div>Let's talk about <strong>how web maps work</strong>.</div>
+<div><em>These slides</em> come from <strong>several</strong> presentations created by <a href='http://maptime.io'>Maptime</a> chapters.</div>
+<div><em>Maptime</em> groups are <em>hands-on</em>, <em>beginner-focused</em> meetup groups for learning about <strong>web mapping</strong> and <strong>geospatial concepts</strong> and <strong>tools</strong>.</div>
+<div>(This is <em>up your alley</em>. <a href='http://twitter.com/maptimehq'>Check it out</a> -- maybe you can start a chapter in <strong>Eugene</strong>!)</div>
+<div data-bodyclass='mapquest'><br><br><br>In 1996, Mapquest launched its web service.</div>
+<div>Directions for driving! <em>Online!</em> <strong>Wow!</strong></div>
+<div>The problem: it was <strong>slow</strong> to load :(.</div>
+<div>MapQuest required a <em>full page refresh</em> to scroll or zoom, and was always <strong>aligned to tile boundaries</strong>.</div>
+<div>Then, in 2005, came <em>Google Maps</em>. This revolutionized <strong>everything</strong>.</div>
+<div data-bodyclass='old-google'></div>
+<div><em>But what was the revolution?</em><br>Was it the <strong>interface</strong>?<br>The <strong>red marker</strong>?<br>The <strong>weather widget</strong>?</div>
+<div>No!</div>
+<div>It was the <em>tile. <img src="./images/toner.jpg"></em></div>
+<div><strong>Map tiles</strong> are 256x256 pixel <em>images</em> that represent <strong>little pieces</strong> of the map.</div>
+<div data-bodyclass="tile-loading">All these little tiles load <em>way faster</em> than one big map.</div>
+<div data-bodyclass="slippy-map">This kind of map is colloquially called a <strong>slippy map</strong>.</div>
+<div>You just grab the <strong>ones you need to fit your screen</strong> plus a few extra along the <em>top</em>, <em>bottom</em>, <em>left</em>, and <em>right</em>.</div>
+<div>On a <strong>web map</strong>, we don't have <em>scales</em>. We have <strong>zoom levels</strong>.</div>
+<div>Each <em>zoom level</em> has its own set of tiles!</div>
+<div data-bodyclass='zoom0'><em>Zoom level 0: one tile for the world.</em></div>
+<div>With each additional zoom level, the number of tiles increases <strong>exponentially</strong>.</div>
+<div data-bodyclass='zoom1'><em>Zoom level 1: 4 tiles for the world.</em></div>
+<div data-bodyclass='zoom2345'><br><br><br><em>Zoom level 2, 3, 4, 5</em></div>
+<div data-bodyclass='zoom13'><em>Zoom level 13</em></div>
+<div>Each map tile has a unique <em>address</em>!</div>
+<div>For example: <a href="http://tile.openstreetmap.org/4/2/6.png" target="_blank">http://tile.openstreetmap.org/4/2/6.png</a></div>
+<div>These URLs are <strong>constructed</strong> the same way:</div>
+<div>http://<em>tile.openstreetmap.org</em>/4/2/6.png -- this is the name of the tile server.</div>
+<div>http://tile.openstreetmap.org/<em>4</em>/2/6.png -- this is the z value, or the zoom level.</div>
+<div>http://tile.openstreetmap.org/4/<em>2/6</em>.png -- This is the x/y value, or the place in the grid for that zoom where the tile lives.</div>
+<div>Up until <strong>super recently</strong>, these tiles were <em>rendered</em> (with a tool called <a href='http://mapnik.org'>Mapnik</a>) and <em>saved</em> as PNGs.</div>
+<div data-bodyclass='tiled-tiles'>We can call those <em>"raster tiles"</em>.</div>
+<div>A couple years ago, <strong>Mapbox</strong> released a <em>specification</em> for a <strong>new</strong> way to draw maps:</div>
+<div data-bodyclass='vector-tiles'>the <em>vector tile</em>.</div>
+<div><a href='https://www.mapbox.com/developers/vector-tiles/'>Vector tiles</a> separate the <strong>style</strong> from the <em>source</em> of the tile.</div>
+<div>Instead of rendering and storing the tile as a <strong>PNG file</strong>, the data is stored in <em>two pieces</em>:</div>
+<div><strong>source</strong> and <em>style</em>.</div>
+<div><em>Sources</em> are stored as <em>protocol buffers</em> -- <strong>very compact</strong> pieces of data.</div>
+<div>The <em>.pbf</em> has information on <strong>all</strong> the <em>vector data</em> that makes up that tile.</div>
+<div><em>Styles</em> are saved as <strong>JSON</strong> (JavaScript object) files.</div>
+<div>The <strong>slippy map</strong> requests the vector tiles the <em>same way</em> as it would request the <strong>raster tiles</strong>...</div>
+<div>... but the <em>style JSON</em> is combined the with the <strong>.pbf file</strong> when the tiles are <em>requested</em>and a <strong>PNG</strong> is served to the browser.</div>
+<div>This is like, <em>way more efficient</em> than the old way.</div>
+<div>Tiled maps <strong>almost always</strong> rely on <em>Web Mercator</em>.</div>
+<div>That's nice because <em>interoperability</em>, which is an important concept in <strong>how the web should work</strong>.</div>
+<div>It means whatever the map,<br>whatever the zoom, a tile will have the<br><strong>same boundaries</strong>.</div>
+<div data-bodyclass='tile-gif'></div>
+<div><strong>Mercator projection</strong> means that <em>latitude</em> and <em>longitude</em> lines make perfect right angles...</div>
+<div>... and <em>Web Mercator</em> means that these right angles form <strong>perfect squares</strong>...</div>
+<div>... which has <em>kinda worked</em> for people for a <strong>long time</strong>.<br>Maybe <em>too long</em>.</div>
+<div data-bodyclass='mercator'></div>
+<div>If you're a geographer you know that transforming the globe from an <strong>oblate spheroid</strong> to a <em>flat map</em> distorts the area of continents dramatically...</div>
+<div data-bodyclass='distortion'></div>
+<div data-bodyclass='mercator1'>...and much ink has been spilled over decades about the <a href="http://andywoodruff.com/blog/why-are-choropleth-mercator-maps-bad-because-we-said-so/">perceptual implications</a> of using <em>Mercator</em> as your default projection.</a></div>
+<div><strong>ANYWAY!</strong></div>
+<div>That's how <em>tiles</em> work.</div>
+<div>What about <strong>feature layers</strong>, the <em>vector</em> data we <strong>interact</strong> with on maps?</div>
+<div data-bodyclass='anatomy'></div>
+<div>There are a <strong>few</strong> different formats for adding <em>interactive data</em> to maps.</div>
+<div>But the most <em>popular</em> by far is <a href='http://geojson.org'>GeoJSON</a>.</div>
+<div><strong>As mentioned</strong>, <em>GeoJSON</em> is an extension of a format called <a href="http://json.org">JSON</a>, which stands for <strong>JavaScript Object Notation</strong>.</div>
+<div>Because <em>GeoJSON</em> is basically just <strong>JavaScript</strong>, it can easily be used in <em>web maps</em>!</div>
+<div>Some data types <em>do well</em> on the web, and some do <strong>not</strong>.</div>
+<div><em>GeoJSON</em> does well. <strong>Shapefiles</strong> do not.</div>
+<div>There are <em>many tools</em> for converting from <strong>Shapefile</strong> to <em>GeoJSON</em>: check out <a href='http://geojson.io'>geojson.io</a>.</div>
+<div>Now we know that <em>GeoJSON</em> is just <strong>JavaScript</strong>, which means that <em>web mapping libraries</em> are like, <strong>way stoked on that</strong>.</div>
+<div>What is a <em>mapping library</em>? What does it <strong>do</strong>?</div>
+<div>We learned about <strong>tiles</strong> before. And we learned about <em>slippy maps</em> and <strong>feature layers</strong>.</div>
+<div>Our tiles and data need to <strong>live somewhere</strong> on the web page. They need to know <em>when</em> to load and they need to <strong>react</strong> when you scroll or drag.</div>
+<div><em>JavaScript libraries</em> allow us to do <strong>just that</strong>. They <em>take care of that</em> for us.</div>
+<div><a href='https://leafletjs.com'>Leaflet.js</a> (and <a href='https://mapbox.com/mapbox.js'>Mapbox.js</a>) are a couple that are <strong>particularly awesome</strong>.</div>
+<div>We can talk about this <em>more</em> if you <strong>stick around</strong> for the next hour!</div>
+<div>At this point I'm <em>probably</em> over time.</div>
+<div>But I'll end with this: I understand that it's <strong>not super easy</strong> to just <em>jump in</em> to doing something new.</div>
+<div><strong>Maps</strong> are <em>hard</em>. <strong>Programming</strong> is <em>hard</em>.</div>
+<div>If you <em>ever</em> have <strong>ANY</strong> questions, <em>do not hesitate</em> to reach out.</div>
+<div>I'm at <strong>lyzi@mapbox.com</strong>.</div>
+<div>You can find this presentation <strong>online</strong>: <a href='http://lyzidiamond.com/geog4591'>lyzidiamond.com/geog4591</a>.</div>
+<div>And I have <strong>totally sweet coupons</strong> for you!</div>
+<div>Remember:</div>
+<div data-bodyclass='cactus'></div>
+<div data-bodyclass='back-pat'></div>
+<div>Thanks!</div>
+<div>If you can <em>swing</em> it, <strong>stick around</strong> and we'll talk some <em>more</em>.</div>
+<div>I'm <em>Lyzi Diamond</em>. Twitter: <a href='https://twitter.com/lyzidiamond'>@lyzidiamond</a>. Email: <strong>lyzi@mapbox.com</strong>.</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47757349-1', 'lyzidiamond.com');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
